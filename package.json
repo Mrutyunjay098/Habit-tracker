@@ -1,11 +1,14 @@
 {
+  "homepage": "https://Mrutyunjay098.github.io/Habit-tracker",
   "name": "habittracker",
   "version": "1.0.0",
   "description": "A web application to keep track of daily habits",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js", 
+  "predeploy": "npm run start", 
+  "deploy": "gh-pages -d build",
+  "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Mrutyunjaya",
   "license": "ISC",
